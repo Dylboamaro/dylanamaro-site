@@ -13,7 +13,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 1rem 2rem; /* Unified padding */
+  padding: 2rem 2rem; /* Unified padding */
   background-color: #ffffff;
   position: fixed;
   top: 0;
@@ -27,11 +27,12 @@ nav ul {
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 0;
   gap: 2.5rem;
   list-style: none;
   white-space: nowrap;
   flex-shrink: 0; /* don't let it get squished */
+  padding-right: 1rem;
+
 }
 
 nav h1 a {
@@ -55,7 +56,7 @@ nav p {
 .hero {
   padding: 4rem 2rem;
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 6rem;
 }
   
 header {
@@ -73,7 +74,7 @@ header * {
 }
 
 .narrow-left {
-  max-width: 50%;     /* keep the paragraph narrow */
+  max-width: 70%;     /* keep the paragraph narrow */
   text-align: left;     /* keep the text left-aligned */  
   font-size: 2.2rem; /* or try 1.75rem, 2rem, etc. */
   font-weight: 400;
@@ -90,6 +91,7 @@ html, body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 main {
@@ -107,6 +109,7 @@ footer {
 
 .container {
   margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .section-links {
@@ -133,7 +136,7 @@ footer {
 .center-text {
   font-family: 'Gallient', 'Work Sans', sans-serif; 
   text-align: center;
-  font-size: 16rem; /* or whatever size you prefer */
+  font-size: 13rem; /* or whatever size you prefer */
   font-weight: 300;      /* lighter font weight */
 
 }
@@ -151,38 +154,22 @@ footer {
   margin-bottom: 0.25rem;
 }
 
-.resume-paragraph {
-  font-size: 1.2rem; /* or try 1.5rem or even 2rem */
-  line-height: 1.6;
-}
-
 .resume-inline {
   display: flex;
   align-items: baseline;
   width: 100%;
-  gap: 2rem;
-  margin-top: 0rem;   /* tighter spacing after section-break */
-  margin-bottom: 1rem;
-  flex-wrap: wrap;       /* allows wrapping on small screens */
+  flex-wrap: wrap;
 }
 
-.resume-inline p {
-  margin-top: 0.4rem;
-}
-
-.job-title {
-  flex: 0 0 auto;
-}
-
-.job-role {
+.job-role, .read-more {
   margin-left: 6rem;
-  flex: 0 0 auto;
 }
 
-.read-more {
-  margin-left: 6rem;
-  flex: 0 0 auto;
+#resume.hero {
+  margin-top: 0rem !important;
+  padding-top: 0rem !important;
 }
+
 
 
 @font-face {
