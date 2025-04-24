@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: 'Work Sans', sans-serif;
   background-color: #ffffff;
-  color: #333;
+  color: #000000;
   font-size: 18px;
   line-height: 1.3;
 }
@@ -128,6 +128,68 @@ footer {
 
 .section-links a:hover {
   color: #000000;
+}
+
+.center-text {
+  font-family: 'Gallient', 'Work Sans', sans-serif; 
+  text-align: center;
+  font-size: 16rem; /* or whatever size you prefer */
+  font-weight: 300;      /* lighter font weight */
+
+}
+
+.section-break {
+  margin-top: 0rem;
+  margin-bottom: .25rem;
+  width:100%;
+  border: none;
+  height: 1px;
+  background-color: #000000; /* or #333 for darker, or a custom accent */
+}
+
+.resume-title {
+  margin-bottom: 0.25rem;
+}
+
+.resume-paragraph {
+  font-size: 1.2rem; /* or try 1.5rem or even 2rem */
+  line-height: 1.6;
+}
+
+.resume-inline {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  gap: 2rem;
+  margin-top: 0rem;   /* tighter spacing after section-break */
+  margin-bottom: 1rem;
+  flex-wrap: wrap;       /* allows wrapping on small screens */
+}
+
+.resume-inline p {
+  margin-top: 0.4rem;
+}
+
+.job-title {
+  flex: 0 0 auto;
+}
+
+.job-role {
+  margin-left: 6rem;
+  flex: 0 0 auto;
+}
+
+.read-more {
+  margin-left: 6rem;
+  flex: 0 0 auto;
+}
+
+
+@font-face {
+  font-family: 'Gallient';
+  src: url('../fonts/Gallient.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @keyframes dropIn {
