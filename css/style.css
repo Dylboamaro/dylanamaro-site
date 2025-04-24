@@ -1,18 +1,18 @@
 /* css/style.css */
 body {
   margin: 0;
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   background-color: #ffffff;
   color: #333;
   font-size: 18px;
   line-height: 1.3;
 }
-  
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.3rem 2rem;
   background-color: #ffffff;
 }
   
@@ -24,9 +24,12 @@ nav h1 a {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: rem;
   margin: 0;
   padding: 0;
+
+  justify-content: flex-end; /* This aligns items to the right */
+  flex: 1;                   /* This takes up the remaining horizontal space */
 }
   
 nav a {
@@ -34,12 +37,33 @@ nav a {
   text-decoration: none;
   font-weight: 600;
 }
-  
+
+nav p {
+  margin: 0;
+  padding: 0;
+  font-weight: 200;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.3rem 2rem; /* Reduce nav top padding */
+}
+
 .hero {
   padding: 4rem 2rem;
   text-align: center;
 }
   
+header {
+  font-size: .7rem; /* Adjust as needed */
+}
+
+header * {
+  font-weight: 400 !important;
+}
+
 footer {
   text-align: center;
   padding: 1rem;
@@ -61,13 +85,17 @@ footer {
   text-align: left;     /* keep the text left-aligned */  
 }
 
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2.5rem;
+}
 
-
-
-
-
-
-
+nav li {
+  margin: 0;
+}
 
 /* Light theme is default */
 body.dark-mode {
@@ -86,8 +114,8 @@ body.dark-mode a {
 }
 
 #dark-mode-toggle {
-  margin-left: 1rem;
-  padding: 0.5rem;
+  margin-left: 2rem;
+  padding: 0.3rem 0.6rem;
   font-size: 1rem;
   cursor: pointer;
   background: none;
