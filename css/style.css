@@ -12,24 +12,31 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.3rem 2rem;
+  flex-wrap: wrap;
+  padding: 1rem 2rem; /* Unified padding */
   background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
 }
-  
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2.5rem;
+  list-style: none;
+  white-space: nowrap;
+  flex-shrink: 0; /* don't let it get squished */
+}
+
 nav h1 a {
   color: #000000;
   text-decoration: none;
-}
-  
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: rem;
-  margin: 0;
-  padding: 0;
-
-  justify-content: flex-end; /* This aligns items to the right */
-  flex: 1;                   /* This takes up the remaining horizontal space */
 }
   
 nav a {
@@ -39,86 +46,101 @@ nav a {
 }
 
 nav p {
+  flex: 1;
   margin: 0;
-  padding: 0;
+  padding-left: 1rem; /* 👈 Add left padding here */
   font-weight: 200;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 0.3rem 2rem; /* Reduce nav top padding */
 }
 
 .hero {
   padding: 4rem 2rem;
   text-align: center;
+  margin-top: 10rem;
 }
   
 header {
-  font-size: .7rem; /* Adjust as needed */
+  font-size: .9rem; /* Adjust as needed */
 }
 
 header * {
   font-weight: 400 !important;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #ffffff;
-  color: #000000;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
 .content, .hero {
-  max-width: 800px;
+  max-width: 100%;
   padding: 2rem;
   text-align: left;   /* default to left alignment */
 }
 
 .narrow-left {
-  max-width: 600px;     /* keep the paragraph narrow */
+  max-width: 50%;     /* keep the paragraph narrow */
   text-align: left;     /* keep the text left-aligned */  
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 2.5rem;
+  font-size: 2.2rem; /* or try 1.75rem, 2rem, etc. */
+  font-weight: 400;
+  margin-bottom: 0;
 }
 
 nav li {
   margin: 0;
 }
 
-/* Light theme is default */
-body.dark-mode {
-  background-color: #121212;
-  color: #f0f0f0;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-body.dark-mode header,
-body.dark-mode nav,
-body.dark-mode footer {
-  background-color: #1e1e1e;
+main {
+  flex: 1 0 auto;  
 }
 
-body.dark-mode a {
-  color: #90ee90; /* light green */
+footer {
+  text-align: center;
+  padding: 1rem 2rem;
+  background-color: #000000;
+  color: #ffffff;
+  width: 100%;
+  flex-shrink: 0;
 }
 
-#dark-mode-toggle {
-  margin-left: 2rem;
-  padding: 0.3rem 0.6rem;
-  font-size: 1rem;
-  cursor: pointer;
-  background: none;
-  border: none;
-  color: inherit;
+.container {
+  margin-left: 1rem;
+}
+
+.section-links {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 3rem;
+  display: flex;
+  margin-top: 0rem; /* reduced spacing */
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.section-links a {
+  text-decoration: underline;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+.section-links a:hover {
+  color: #000000;
+}
+
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.drop-in {
+  animation: dropIn 1s ease-out forwards;
 }

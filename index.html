@@ -1,35 +1,74 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | Dylan Amaro</title>
+  <title>Dylan Amaro | Portfolio</title>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <nav>
-      <p><a href="/index.html">DYLAN AMARO</a></p>
+    <nav class="drop-in">
+      <p><a href="#">DYLAN AMARO</a></p>
       <ul>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="resume.html">RESUME</a></li>
-        <li><a href="portfolio.html">PORTFOLIO</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="#about">RESUME</a></li>
+        <li><a href="#resume">PORTFOLIO</a></li>
+        <li><a href="#portfolio">WRITING</a></li>
+        <li><a href="#contact">ABOUT</a></li>
       </ul>
-      <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <p>Hi, I'm Dylan Amaro,<p>
-      <p>Refugee Youth Case Manager @ JFS of Washtenaw County<p>
-      <h3 class="narrow-left">Supporting refugee families, nurturing displaced youth and collaborating with local/state organizations such as Ann Arbor Public Schools,
-      Whitness Change, Office of Global Michigan, HIAS and many more.<h3></h3>
+    <section class="hero container">
+      <p>Hi, I'm Dylan Amaro, <br>
+      Refugee Youth Case Manager @ JFS of Washtenaw County</p>
+      <h3 class="narrow-left">Designing and delivering presentations for refugee families, 
+        managing case databases for streamlined service access, and bridging 
+        communication between diverse immigrant communities and established institutions.</h3>
+    </section>
+
+    <ul class="section-links">
+      <li><a href="#about">Resume↓</a></li>
+      <li><a href="#resume">Portfolio↓</a></li>
+      <li><a href="#portfolio">Writing↓</a></li>
+      <li><a href="#contact">Contact↓</a></li>
+    </ul>
+
+    <section id="about" class="hero container">
+      <h2 class="center-text">About Me</h2>
+      <p>¡Hola! I'm Dylan Amaro, a Refugee Case Manager based in Ann Arbor, MI. 
+        I love working on projects that make a difference. 
+        I'm passionate about social justices of the present day and understanding
+        the themes of major world history. I am always eager to learn new skills-
+        take a look at my portfolio page to see what I've gotten myself into recently!</p>
+    </section>
+
+    <section id="resume" class="hero container">
+      <h2 class="center-text">Resume</h2>
+      <p><strong>Education:</strong><br>University of Michigan - Ann Arbor<br>B.A. in General Studies, May 2024</p>
+
+      <p><strong>Work Experience:</strong><br>
+        Refugee Case Manager (2024–Present)<br>
+        K-5 Chess Instructor (2020–2024)<br>
+        Student Researcher - Immigration Law (2022–2023)</p>
+
+      <p><strong>Skills:</strong><br>Data Entry & Excel, Digital Organization & Files Management, Spanish, Case Management, 
+        Canva for Digital Infographics, C++, HTML, CSS, & JavaScript</p>
+    </section>
+
+    <section id="portfolio" class="hero container">
+      <h2 class="center-text">Portfolio</h2>
+      <p>This section is coming soon. It will feature some of my favorite projects, including web design, chess content, and more.</p>
+    </section>
+
+    <section id="contact" class="hero container">
+      <h2 class="center-text">Contact</h2>
+      <p>You can reach me via email at <a href="mailto:contact@dylanamaro.com">contact@dylanamaro.com</a>.</p>
+      <p>Or connect with me on <a href="https://www.linkedin.com/in/dylan-amaro-254527156/">LinkedIn</a>.</p>
     </section>
   </main>
 
@@ -37,4 +76,5 @@
     <p>&copy; 2025 Dylan Amaro. All rights reserved.</p>
   </footer>
 </body>
+
 </html>
