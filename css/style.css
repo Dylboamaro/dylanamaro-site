@@ -1,177 +1,3 @@
-/* css/style.css */
-body {
-  margin: 0;
-  font-family: 'Work Sans', sans-serif;
-  background-color: #ffffff;
-  color: #000000;
-  font-size: 18px;
-  line-height: 1.3;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 2rem 2rem; /* Unified padding */
-  background-color: #ffffff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  box-sizing: border-box;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  gap: 2.5rem;
-  list-style: none;
-  white-space: nowrap;
-  flex-shrink: 0; /* don't let it get squished */
-  padding-right: 1rem;
-
-}
-
-nav h1 a {
-  color: #000000;
-  text-decoration: none;
-}
-  
-nav a {
-  color: #000000;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-nav p {
-  flex: 1;
-  margin: 0;
-  padding-left: 1rem; /* 👈 Add left padding here */
-  font-weight: 200;
-}
-
-.hero {
-  padding: 4rem 2rem;
-  text-align: center;
-  margin-top: 6rem;
-}
-  
-header {
-  font-size: .9rem; /* Adjust as needed */
-}
-
-header * {
-  font-weight: 400 !important;
-}
-
-.content, .hero {
-  max-width: 100%;
-  padding: 2rem;
-  text-align: left;   /* default to left alignment */
-}
-
-.narrow-left {
-  max-width: 70%;     /* keep the paragraph narrow */
-  text-align: left;     /* keep the text left-aligned */  
-  font-size: 2.2rem; /* or try 1.75rem, 2rem, etc. */
-  font-weight: 400;
-  margin-bottom: 0;
-}
-
-nav li {
-  margin: 0;
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
-}
-
-main {
-  flex: 1 0 auto;  
-}
-
-footer {
-  text-align: center;
-  padding: 1rem 2rem;
-  background-color: #000000;
-  color: #ffffff;
-  width: 100%;
-  flex-shrink: 0;
-}
-
-.container {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.section-links {
-  list-style: none;
-  padding-left: 0;
-  margin-left: 3rem;
-  display: flex;
-  margin-top: 0rem; /* reduced spacing */
-  flex-direction: column;
-  gap: 0.4rem;
-  font-size: 1.2rem;
-}
-
-.section-links a {
-  text-decoration: underline;
-  color: #000000;
-  transition: color 0.3s ease;
-}
-
-.section-links a:hover {
-  color: #000000;
-}
-
-.center-text {
-  font-family: 'Gallient', 'Work Sans', sans-serif; 
-  text-align: center;
-  font-size: 13rem; /* or whatever size you prefer */
-  font-weight: 300;      /* lighter font weight */
-
-}
-
-.section-break {
-  margin-top: 0rem;
-  margin-bottom: .25rem;
-  width:100%;
-  border: none;
-  height: 1px;
-  background-color: #000000; /* or #333 for darker, or a custom accent */
-}
-
-.resume-title {
-  margin-bottom: 0.25rem;
-}
-
-.resume-inline {
-  display: flex;
-  align-items: baseline;
-  width: 100%;
-  flex-wrap: wrap;
-}
-
-.job-role, .read-more {
-  margin-left: 6rem;
-}
-
-#resume.hero {
-  margin-top: 0rem !important;
-  padding-top: 0rem !important;
-}
-
-
-
 @font-face {
   font-family: 'Gallient';
   src: url('../fonts/Gallient.ttf') format('truetype');
@@ -179,17 +5,269 @@ footer {
   font-style: normal;
 }
 
-@keyframes dropIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding-top: 1.1rem;
+  padding-left: 22.2rem;
+  padding-right: 22.2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #ffffff; /* Or any background color you want */
+}
+
+.nav-links {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3rem; /* <-- spacing between the links */
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: .85rem;
+  font-weight: 575;
+  color: #141414;
+  letter-spacing: 2px; /* <-- This increases space between letters */
+
+}
+
+/* Set default font and background for the whole page */
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: #ffffff;
+  color: #141414;
+  line-height: 1.6;
+}
+
+
+.gallient-heading {
+  font-family: 'Gallient', sans-serif;
+  font-size: 70px;
+  font-weight: 300;
+  padding-left: 22.2rem;
+  padding-right: 22.2rem;
+}
+
+.gen-info {
+  font-weight: 500;
+  font-size: 22px;
+  padding-left: 22.2rem;
+  padding-right: 22.2rem;
+}
+
+.horizontal-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 22.2rem;
+  padding-right: 22.2rem;
+  background-color: #ffffff;
+}
+
+.endorsements-link {
+  font-size: .9rem;
+  color: #1e4620;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.download-button {
+  font-size: .8rem;
+  letter-spacing: 2px;
+  background-color: #141414;
+  color: #fff;
+  padding: 1.1rem 3rem;
+  text-decoration: none;
+  border: 1px solid transparent; /* prevents shift */
+  transition: all 0.3s ease;
+}
+
+.download-button:hover {
+  color: #141414;
+  background-color: #ffffff;
+  border: 1px solid #141414; /* <-- black border */
+}
+
+.box-container-gray {
+  display: flex;
+  justify-content: center; /* Center the boxes horizontally */
+  gap: 30px;
+  margin-top: 50px; /* Optional, for spacing from top */
+  padding-bottom: 3.3rem;
+}
+
+.text-box-gray {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  width: 375px;
+  height: 390px;
+  background-color: #f8f9fd; /* Light gray */
+  display: flex;
+  flex-direction: column; /* Stack title and list vertically */
+  align-items: left;
+  justify-content: left;
+  font-size: 15px; /* Optional: font size inside box */
+  text-align: left;
+}
+
+
+.text-box-gray h3 {
+  margin-bottom: 15px;
+  font-size: .9rem;
+  
+}
+
+.text-box-gray ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.text-box-gray li {
+  margin-bottom: 6px; /* Space between list items */
+}
+
+.text-box h3 {
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.text-box h4 {
+  font-weight: 400;
+  font-size: 30px;
+}
+.box-container {
+  display: flex;
+  justify-content: center; /* Center the boxes horizontally */
+  gap: 30px;
+  margin-top: 50px; /* Optional, for spacing from top */
+}
+
+.text-box {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  width: 375px;
+  height: 390px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column; /* Stack title and list vertically */
+  align-items: left;
+  justify-content: left;
+  font-size: 15px; /* Optional: font size inside box */
+  text-align: left;
+}
+
+.text-box h3 {
+  margin-bottom: 15px;
+}
+
+.text-box ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+
+.text-box li {
+  margin-bottom: px; /* Space between list items */
+}
+
+.experiences-container {
+  padding-left: 35rem;
+  padding-right: 35rem;
+}
+
+.experiences-container p {
+  padding-bottom: 4rem;
+}
+
+.experiences-container h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.experiences-container ul {
+  list-style-type: none; /* Remove bullet points */
+}
+.experiences-container-gray {
+  padding-left: 35rem;
+  padding-right: 35rem;
+  background-color: #f8f9fd;
+}
+
+.experiences-container-gray h1 {
+  margin: 0;
+  line-height: 1.1;
+}
+
+.experiences-container-gray p {
+  padding-bottom: 4rem;
+}
+
+
+.experiences-container h1 {
+  margin: 0;
+  line-height: 1.1;
+}
+
+.job-title {
+  font-size: 1rem;
+  font-weight: 400;
+  padding-top: 1rem;
+  padding-bottom: 1rem; 
+  color: #898989;
+}
+
+.top {
+  padding-top: 4rem;
+}
+hr {
+  width: 775px;         /* Set the desired length */
+  margin: 30px auto;         /* Top/bottom: 30px, Left/right: auto = centered */
+  align-content: center;
+  border: none;
+  border-top: 1px solid #e8e4e4; /* Light gray line */
+}
+
+.hidden {
+  display: none !important;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  background-color: #141414;
+  color: #fff;
+  padding: 1rem;
+}
+
+section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 90%;
   }
 }
 
-.drop-in {
-  animation: dropIn 1s ease-out forwards;
+@font-face {
+  font-family: 'Gallient';
+  src: url('fonts/Gallient.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
