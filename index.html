@@ -7,25 +7,28 @@
   <title>Résumé - Dylan Amaro</title>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<header>
-  <nav class="nav-links">
-    <a href="#about" class="nav-link">ABOUT</a>
-    <a href="#" class="nav-link">RÉSUMÉ</a>
-    <a href="#contact" class="nav-link">CONTACT</a>
-  </nav>
-</header>
-
 <body>
+  <header class="hidden-at-start">
+    <nav class="nav-wrapper">
+      <a href="home.html" class="home-button"><i class="fas fa-home"></i></a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">RÉSUMÉ</a>
+        <a href="#page-footer" class="nav-link">CONTACT</a>
+      </div>
+    </nav>
+  </header>
+
   <main class>
     <h1 class="gallient-heading">DYLAN AMARO</h1>
     <h3 class="gen-info">contact@dylanamaro.com</h3>
     <h3 class="gen-info">(734) 664-9061</h3>
 
     <div class="horizontal-box">
-      <a href="endorsements.html" class="endorsements-link">VIEW ENDORSEMENTS →</a>
-      <a href="resume.pdf" class="download-button" download>DOWNLOAD PDF</a>
+      <a href="endorsements.html" class="endorsements-link left-link">VIEW ENDORSEMENTS →</a>
+      <a href="resume.pdf" class="download-button right-link" download>DOWNLOAD PDF</a>
     </div>
 
     <!-- START OF BOXES-->
@@ -52,7 +55,7 @@
           <li>VS Code</li>
           <li>GitHub</li>
           <li>Canva</li>
-          <li>Salesforce</li>
+          <li></li>
         </ul>
       </div>
   
@@ -113,7 +116,7 @@
         </p>
     </div>
 
-    <div class="experiences-container">
+    <div class="experiences-container-last">
       <h1 class="top">SIDE BISCUIT</h1>
       <h1>ANN ARBOR, MI</h1>
       <h2 class="job-title">Culinary Station Manager, Apl 2019 - May 2023 </h2>
@@ -125,18 +128,18 @@
 
     <hr>
 
-    <div class="experiences-container">
+    <div class="education-container">
       <h1>EDUCATION</h1>
-      <p>Bachelor of General Studies</p>
-      <p>University of Michigan, Ann Arbor</p>
+      <p class="job-title">Bachelor of General Studies (B.G.S.)</p>
+      <p class="school-name">University of Michigan, Ann Arbor</p>
     </div>
 
-    <div class="experiences-container">
+    <div class="coursework-container">
       <h1>RELAVENT COURSEWORK</h1>
       <ul>
-        <li>Finance/Policy: Intro to Micro & Macroeconomics, American Politics, Statistics</li>
-        <li>Tech: Programming & Data Structures, Elementary Programming Concepts, Discrete Mathematics</li>
-        <li>Writing: Immigrant Justice Lab, Writing in Academia, Philosphy Problems of Today</li>
+        <li><i>Finance/Policy</i>: Intro to Micro & Macroeconomics, American Politics, Statistics</li>
+        <li><i>Tech</i>: Programming & Data Structures, Elementary Programming Concepts, Discrete Mathematics</li>
+        <li><i>Writing</i>: Immigrant Justice Lab, Writing in Academia, Philosphy Problems of Today</li>
       </ul>
     </div>
 
@@ -208,10 +211,19 @@
     <!-- END OF BOXES-->
 
   </main>
+
+  <footer id="page-footer" class="site-footer">
+    <div class="footer-content">
+      <a href="home.html" class="footer-home-icon"><i class="fas fa-home"></i></a>
+      <h1 class="gallient-footing">DYLAN AMARO</h1>
+      <p class="get-in-touch"> Get in touch at </p>
+      <h2 class="contact-info">contact@dylanamaro.com</p>
+      <h2 class="contact-info">(734) 664-9061</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
 </body>
 
-<footer>
-
-</footer>
 </html>
 
