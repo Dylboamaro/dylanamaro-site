@@ -373,3 +373,10 @@ header.hide-on-footer {
 .site-footer {
   position: relative;
 }
+
+.main-page {
+  font-weight: 400;
+  font-size: xx-large;
+  padding-left: clamp(1rem, 18vw, 22.2rem);
+  padding-right: clamp(1rem, 5vw, 3rem);
+}
