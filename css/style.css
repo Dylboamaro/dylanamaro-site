@@ -189,8 +189,8 @@ header {
 .experiences-container-last,
 .education-container,
 .coursework-container {
-  padding-left: clamp(1rem, 34vw, 38rem);
-  padding-right: clamp(1rem, 34vw, 38rem);
+  padding-left: clamp(1rem, 28vw, 55rem);
+  padding-right: clamp(1rem, 28vw, 55rem);
 }
 
 .experiences-container-gray {
